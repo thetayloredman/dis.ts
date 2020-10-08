@@ -31,19 +31,9 @@
  * See LICENCE for more information.
  */
 
-import * as discord from 'discord.js';
+// Import interfaces/classes & modules
 
-declare interface ClientOptions {
-    ws?: WSOptions
-}
-
-declare interface WSOptions {
+// Main
+export interface WSOptions {
     intents?: string[]
-}
-
-declare class Client {
-    public constructor(options: ClientOptions);
-    public token: string;
-    public client: discord.Client;
-    public login(): Promise<void>;
 }

@@ -40,7 +40,14 @@ import * as discord from 'discord.js';
 // Main
 export class Client {
     public constructor (options: ClientOptions) {
-        this.client = new discord.Client();
+        let passedOptions: { [key: string]: any } = {};
+        if (options.ws) {
+            passedOptions.ws = {};
+            if (options.ws.intents) {
+                passedOptions.ws.intents = options.ws.intents;
+            }
+        }
+        this.client = new discord.Client(passedOptions);
     }
     public client: discord.Client;
     public async login(token: string): Promise<void> {
