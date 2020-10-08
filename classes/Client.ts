@@ -40,14 +40,12 @@ import * as discord from 'discord.js';
 // Main
 export class Client {
     public constructor (options: ClientOptions) {
-        this.token = options.token;
         this.client = new discord.Client();
     }
-    public token: string;
     public client: discord.Client;
-    public async login(): Promise<void> {
+    public async login(token: string): Promise<void> {
         return new Promise((resolve, reject) => {
-            this.client.login(this.token).then(() => {
+            this.client.login(token).then(() => {
                 resolve();
             }).catch((e) => {
                 reject(e);
