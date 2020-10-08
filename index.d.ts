@@ -31,11 +31,15 @@
  * See LICENCE for more information.
  */
 
+import * as discord from 'discord.js';
+
 declare interface ClientOptions {
     token: string
 }
 
 declare class Client {
-    constructor(options: ClientOptions);
-    token: string;
+    public constructor(options: ClientOptions);
+    public token: string;
+    public client: discord.Client;
+    public login(): Promise<void>;
 }

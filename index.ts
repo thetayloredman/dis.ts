@@ -30,3 +30,6 @@
  * 
  * See LICENCE for more information.
  */
+
+export * from './classes/index';
+export * from './interfaces/index';

@@ -1,0 +1,19 @@
+{
+  "name": "dis.ts",
+  "version": "0.0.0",
+  "description": "A discord API client, built for Typescript users!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "ts",
+    "typescript"
+  ],
+  "author": "BadBoyHaloCat",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
+}

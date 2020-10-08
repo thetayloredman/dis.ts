@@ -32,12 +32,26 @@
  */
 
 // Import interfaces/classes & modules
-import { ClientOptions } from '../interfaces/index'
+import { ClientOptions } from '../interfaces/index';
+
+// Discord.js
+import * as discord from 'discord.js';
 
 // Main
 export class Client {
-    constructor (options: ClientOptions) {
+    public constructor (options: ClientOptions) {
         this.token = options.token;
+        this.client = new discord.Client();
     }
-    token: string;
+    public token: string;
+    public client: discord.Client;
+    public async login(): Promise<void> {
+        return new Promise((resolve, reject) => {
+            this.client.login(this.token).then(() => {
+                resolve();
+            }).catch((e) => {
+                reject(e);
+            });
+        });
+    }
 }
