@@ -31,10 +31,9 @@
  * See LICENCE for more information.
  */
 
-declare interface ClientOptions {
-    
-}
+// Import interfaces/classes & modules
 
-declare class Client {
-    constructor(options: ClientOptions)
+// Main
+export interface ClientOptions {
+
 }

@@ -31,10 +31,5 @@
  * See LICENCE for more information.
  */
 
-declare interface ClientOptions {
-    
-}
-
-declare class Client {
-    constructor(options: ClientOptions)
-}
+// Export
+export * from './ClientOptions';
