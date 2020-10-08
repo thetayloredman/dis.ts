@@ -31,9 +31,5 @@
  * See LICENCE for more information.
  */
 
-// Import needed interfaces
-
-// Main
-export class Client {
-    
-}
+// Export
+export * from './Client';
