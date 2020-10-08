@@ -37,6 +37,7 @@ import { ClientOptions } from '../interfaces/index'
 // Main
 export class Client {
     constructor (options: ClientOptions) {
-        
+        this.token = options.token;
     }
+    token: string;
 }

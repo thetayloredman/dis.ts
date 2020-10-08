@@ -36,5 +36,6 @@ declare interface ClientOptions {
 }
 
 declare class Client {
-    constructor(options: ClientOptions)
+    constructor(options: ClientOptions);
+    token: string;
 }
