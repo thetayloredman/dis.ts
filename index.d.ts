@@ -32,7 +32,7 @@
  */
 
 declare interface ClientOptions {
-    
+    token: string
 }
 
 declare class Client {

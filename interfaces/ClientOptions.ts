@@ -35,5 +35,5 @@
 
 // Main
 export interface ClientOptions {
-
+    token: string
 }
