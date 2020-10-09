@@ -31,6 +31,10 @@
  * See LICENCE for more information.
  */
 
+// Modules for typings
+import { Socket } from 'net';
+
+// Main
 declare interface ClientOptions {
 
 }
@@ -48,4 +52,8 @@ declare class TCPConnection {
     public constructor(options: TCPConnectionOptions);
     public host: string;
     public port: number|undefined;
+    public conn: Socket;
+    public opened: boolean;
+    public open(): void;
+    private onOpen(): void;
 }

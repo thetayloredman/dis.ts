@@ -36,13 +36,26 @@ import { TCPConnectionOptions } from '../interfaces/index';
 import {  } from './index';
 
 // Import modules
+import { Socket } from 'net';
 
 // Main
 export class TCPConnection {
     public constructor(options: TCPConnectionOptions) {
         this.host = options.host;
         this.port = options.port;
+        this.conn = new Socket();
+        this.opened = false;
     }
     public host: string;
     public port: number|undefined;
+    public conn: Socket;
+    public opened: boolean;
+    public open(): void {
+        this.conn.connect(this.port || 1337, this.host, () => {
+            this.onOpen();
+        });
+    }
+    private onOpen(): void {
+
+    }
 }
