@@ -42,7 +42,8 @@ declare class Client {
 }
 
 declare interface TCPConnectionOptions {
-
+    host: string,
+    port?: number
 }
 
 declare class TCPConnection {
