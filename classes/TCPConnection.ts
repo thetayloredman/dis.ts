@@ -32,6 +32,8 @@
  */
 
 // Import interfaces/classes
+import {  } from '../interfaces/index';
+import {  } from './index';
 
 // Import modules
 
