@@ -31,8 +31,6 @@
  * See LICENCE for more information.
  */
 
-import * as discord from 'discord.js';
-
 declare interface ClientOptions {
 
 }
