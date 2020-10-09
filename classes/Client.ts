@@ -31,8 +31,10 @@
  * See LICENCE for more information.
  */
 
-// Import interfaces/classes & modules
+// Import interfaces/classes
 import { ClientOptions } from '../interfaces/index';
+
+// Import modules
 
 // Main
 export class Client {
