@@ -32,9 +32,8 @@
  */
 
 // Import interfaces/classes & modules
-import { WSOptions } from './index';
 
 // Main
 export interface ClientOptions {
-    ws?: WSOptions
+    
 }

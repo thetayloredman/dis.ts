@@ -33,17 +33,6 @@
 
 import * as discord from 'discord.js';
 
-declare interface ClientOptions {
-    ws?: WSOptions
-}
-
-declare interface WSOptions {
-    intents?: string[]
-}
-
 declare class Client {
-    public constructor(options: ClientOptions);
-    public token: string;
-    public client: discord.Client;
-    public login(): Promise<void>;
+    
 }

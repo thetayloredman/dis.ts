@@ -33,4 +33,3 @@
 
 // Export
 export * from './ClientOptions';
-export * from './WSOptions';
