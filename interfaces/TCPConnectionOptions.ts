@@ -39,5 +39,6 @@ import {  } from './index';
 
 // Main
 export interface TCPConnectionOptions {
-    
+    host: string,
+    port?: number
 }

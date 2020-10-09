@@ -42,9 +42,9 @@ declare class Client {
 }
 
 declare interface TCPConnectionOptions {
-    
+
 }
 
 declare class TCPConnection {
-    public constructor(options: any);
+    public constructor(options: TCPConnectionOptions);
 }
