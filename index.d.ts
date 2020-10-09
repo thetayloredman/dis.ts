@@ -36,7 +36,7 @@ declare interface ClientOptions {
 }
 
 declare class Client {
-
+    constructor(options: ClientOptions);
 }
 
 declare interface TCPConnectionOptions {
@@ -46,4 +46,6 @@ declare interface TCPConnectionOptions {
 
 declare class TCPConnection {
     public constructor(options: TCPConnectionOptions);
+    public host: string;
+    public port: number|undefined;
 }

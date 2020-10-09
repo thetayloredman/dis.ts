@@ -40,6 +40,9 @@ import {  } from './index';
 // Main
 export class TCPConnection {
     public constructor(options: TCPConnectionOptions) {
-
+        this.host = options.host;
+        this.port = options.port;
     }
+    public host: string;
+    public port: number|undefined;
 }

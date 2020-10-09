@@ -39,5 +39,7 @@ import { TCPConnection } from './index';
 
 // Main
 export class Client {
-    
+    constructor(options: ClientOptions) {
+        
+    }
 }
