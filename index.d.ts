@@ -33,6 +33,14 @@
 
 import * as discord from 'discord.js';
 
+declare interface ClientOptions {
+    
+}
+
 declare class Client {
+
+}
+
+declare class TCPConnection {
     
 }
