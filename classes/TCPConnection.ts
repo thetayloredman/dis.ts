@@ -31,6 +31,11 @@
  * See LICENCE for more information.
  */
 
-// Export
-export * from './Client';
-export * from './TCPConnection';
+// Import interfaces/classes
+
+// Import modules
+
+// Main
+export class TCPConnection {
+    
+}

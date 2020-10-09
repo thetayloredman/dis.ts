@@ -33,6 +33,7 @@
 
 // Import interfaces/classes
 import { ClientOptions } from '../interfaces/index';
+import { TCPConnection } from './index';
 
 // Import modules
 
