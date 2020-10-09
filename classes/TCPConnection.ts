@@ -32,12 +32,14 @@
  */
 
 // Import interfaces/classes
-import {  } from '../interfaces/index';
+import { TCPConnectionOptions } from '../interfaces/index';
 import {  } from './index';
 
 // Import modules
 
 // Main
 export class TCPConnection {
-    
+    public constructor(options: TCPConnectionOptions) {
+
+    }
 }

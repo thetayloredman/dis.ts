@@ -31,20 +31,13 @@
  * See LICENCE for more information.
  */
 
-import * as discord from 'discord.js';
+// Import interfaces/classes
+import {  } from '../interfaces/index';
+import {  } from './index';
 
-declare interface ClientOptions {
+// Import modules
 
-}
-
-declare class Client {
-
-}
-
-declare interface TCPConnectionOptions {
+// Main
+export interface TCPConnectionOptions {
     
-}
-
-declare class TCPConnection {
-    public constructor(options: any);
 }

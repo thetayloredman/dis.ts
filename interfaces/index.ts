@@ -33,3 +33,4 @@
 
 // Export
 export * from './ClientOptions';
+export * from './TCPConnectionOptions';
